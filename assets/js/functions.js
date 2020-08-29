@@ -1,4 +1,10 @@
 // @codekit-prepend "/vendor/hammer-2.0.8.js";
+$(window).on("load", function() {
+  "use strict";
+  setTimeout(function() {
+      $("#loading").fadeOut(800);
+  }, 500)
+});
 
 $( document ).ready(function() {
 
