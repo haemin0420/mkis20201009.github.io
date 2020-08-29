@@ -1,0 +1,6 @@
+{
+    "compile-hero": {
+        "sass-output-directory": "./",
+        "scss-output-directory": "./",
+    }
+}

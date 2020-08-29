@@ -14,6 +14,8 @@
   &--banner
     position: relative
     height: 475px
+    text-align: center
+    z-index: 99
 
     &::before
       content: ""
@@ -32,6 +34,31 @@
       width: 30px
       height: 4px
       background-color: $highlight
+
+    .type
+      height: 80%
+
+    .typing-txt
+      display: none
+    
+    ul
+      list-style: none
+      font-size: 1.5em
+
+    .typing ul li.on  
+      display: inline-block 
+      animation-name: cursor 
+      animation-duration: 0.3s 
+      animation-iteration-count: infinite 
+     
+    @keyframes cursor 
+      0%
+        border-right: 1px solid #fff 
+      50%
+        border-right: 1px solid #000 
+      100%
+        border-right: 1px solid #fff 
+    
 
     h1
       position: relative
