@@ -69,7 +69,8 @@
   & > li
     transform-style: preserve-3d
     transform: translateX(350px) translateZ(-1000px)
-    font-size: 55px
+    font-size: 2em
+    padding: 20px 0
     font-weight: 900
     opacity: 0
     cursor: pointer
@@ -92,13 +93,13 @@
       background-color: $highlight
 
     &.is-active::before
-      opacity: 1
+      opacity: 0.8
 
     @media (max-width: 767px)
-      font-size: 44px
+      font-size: 1em
 
     @media (max-width: 600px)
-      font-size: 34px
+      font-size: 1em
 
   li.is-vis:nth-child(2)
     transition-delay: .04s

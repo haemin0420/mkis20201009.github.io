@@ -49,8 +49,8 @@ $(document).ready(function () {
     var curActive = $('.side-nav').find('.is-active'),
         curPos = $('.side-nav').children().index(curActive),
         lastItem = $('.side-nav').children().length - 1,
-        nextPos = lastItem;
-    updateNavs(lastItem);
+        nextPos = curPos !== lastItem ? curPos + 1 : lastItem;
+    updateNavs(nextPos);
     updateContent(curPos, nextPos, lastItem);
   }); // swipe support for touch devices
 
